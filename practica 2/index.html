@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum con Diseño</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #5a58584a;
+    }
+
+    .cv-container {
+      background: #d0c5c5;
+      width: 800px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 20px;
+    }
+
+    /* Columna izquierda */
+    .left-column {
+      border-right: 2px solid #000000;
+      padding-right: 15px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      background: #000000;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .contact i {
+      margin-right: 8px;
+    }
+
+    /* Columna derecha */
+    .right-column {
+      padding-left: 15px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .idiomas p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    
+    <!-- Columna izquierda -->
+    <div class="left-column">
+          <img  width="300px" src="practica imagen.jpg" alt="José Gael" class="profile-pic">
+      <h3>José Gael <br>Hernández Velázquez</h3>
+      <p><em>Estudiante de La Salle Bajio</em></p>
+
+      <h3>Contacto</h3>
+      <ul class="contact">
+        <li>📞 0000000</li>
+        <li>✉️ josegael@practica2.com</li>
+        <li>📍 Léon, Guanajuato</li>
+        <li>🔗 <a href="https://mx.linkedin.com/"target="_blank">linkedin</a>
+      </ul>
+
+      <h3>Más Información</h3>
+      <ul>
+        <li>- Experiencia en instalacion de hardware a equipos de computo</li>
+        <li>- Vehículo propio</li>
+        <li>- Disponibilidad: inmediata</li>
+      </ul>
+
+      <h3>Idiomas</h3>
+      <div class="idiomas">
+        <p><strong>Español:</strong> Nativo</p>
+        <p><strong>Inglés:</strong> Nivel basico</p>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="right-column">
+      <div class="section">
+        <h3>Acerca de mí</h3>
+        <p>
+          Estoy en mi primer semestre de la carrera y me gustaría adquirir mas experiencia y conocimiento en programacion y creacion de paginas web. Soy una persona que le llama mucho la atencion la tecnologia y me encantaría especializarme en ciberseguridad. Actualmente, asisto a clases por la mañana, por lo que tendría disponibilidad en horario de la tarde. 
+        </p>
+        <p>
+          Me considero una persona responsable y aplicada. Además, me gusta mucho trabajar en equipo y aprender cosas nuevas.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Datos Académicos</h3>
+        <p><strong>La Salle Bajio</strong> 
+          <p> Estudios: Secundaria y Preparatoria </p>
+          <p></p>Actualmente : Ing. en Tecnologia y Soluciones de Negocios</p>
+      </div>
+
+      <div class="section">
+        <h3>Experiencia Laboral</h3>
+        <p><strong>Empresa: Arroba Solutions</strong> <br> 
+          <p></p>Labor: Tecnico en servicios de computo <p></p>
+          <p></p>Inicio: Enero de 2023 - Finalización : Julio de 2025 </p>
+      </div>
+
+      <div class="section">
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Instalacion y configuracion de hardware y software</li>
+          <li>Mantenimiento preventivo y correctivo de equipos de computo</li>
+          <li>Conocimientos basicos en redes</li>
+          <li>Trabajo en equipo</li>
+          <li>Responsabilidad y compromiso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
