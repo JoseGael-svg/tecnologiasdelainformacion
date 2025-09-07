@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playlist Jose Gael</title>
+  <meta name="description" content="Listado de canciones de Víctor Mendívil con sus videos oficiales y un diseño moderno y responsivo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10; --card:#111217; --muted:#9aa0a6; --text:#e8eaed; --accent:#5eead4; --ring: rgba(94,234,212,.45);
+      --ring-strong: rgba(94,234,212,.75);
+      --shadow: 0 10px 25px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:radial-gradient(1200px 800px at 10% -10%, rgba(94,234,212,.08), transparent 40%),
+      radial-gradient(1200px 800px at 110% 10%, rgba(255,255,255,.05), transparent 40%), var(--bg);
+    }
+    .container{max-width:1200px; margin-inline:auto; padding:32px;}
+    header{
+      display:flex; gap:16px; align-items:center; justify-content:space-between; margin-bottom:22px;
+    }
+    .title{font-size:clamp(22px,3vw,34px); font-weight:800; letter-spacing:.3px;}
+    .muted{color:var(--muted)}
+    .search{
+      display:flex; align-items:center; gap:12px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1);
+      padding:10px 14px; border-radius:14px; box-shadow:var(--shadow);
+    }
+    .search input{
+      all:unset; width:260px; max-width:48vw;
+    }
+    .pill{
+      border:1px solid rgba(255,255,255,.08); padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted);
+      background:rgba(255,255,255,.03);
+    }
+    .grid{
+      display:grid; grid-template-columns:repeat(12,1fr); gap:18px; margin-top:18px;
+    }
+    @media (width<=1024px){.grid{grid-template-columns:repeat(8,1fr)}}
+    @media (width<=720px){.grid{grid-template-columns:repeat(4,1fr)}}
+    .card{
+      grid-column:span 4; background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1);
+      border-radius:18px; overflow:hidden; box-shadow:var(--shadow); position:relative; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover{ transform:translateY(-2px); box-shadow:0 16px 36px rgba(0,0,0,.45); border-color:var(--ring-strong); }
+    .thumb{ position:relative; aspect-ratio:16/9; background:#000; }
+    iframe{ width:100%; height:100%; border:0; display:block; }
+    .content{ padding:14px 14px 16px; display:flex; gap:10px; align-items:flex-start; }
+    .dot{ width:10px; height:10px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 6px var(--ring); margin-top:4px; flex:0 0 auto;}
+    .title-sm{ font-weight:700; font-size:clamp(14px,2.2vw,16px); line-height:1.25; }
+    .subtitle{ font-size:12px; color:var(--muted); margin-top:4px; }
+    .footer{
+      display:flex; align-items:center; justify-content:space-between; margin-top:22px; color:var(--muted); font-size:12px;
+    }
+    .credit a{ color:var(--text); text-underline-offset:2px }
+    .filter-info{ display:none }
+    .empty{ display:none; text-align:center; padding:40px 12px; color:var(--muted); }
+    .kbd{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); padding:2px 6px; border-radius:6px }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 class="title">My Playlist Jose Gael</h1>
+        <p class="muted">Estas son mis canciones favoritas de mi artista favorito</p>
+      </div>
+      </label>
+    </header>
+
+    <div class="grid" id="grid">
+
+      <article class="card" data-title="Me Paseo Oscar Maydon Victor Mendivil Video Oficial">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/g19kwHhK3bo" title="Víctor Mendívil x Oscar Maydon – Me Paseo (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Me Paseo — Víctor Mendívil x Oscar Maydon</div>
+            <div class="subtitle">Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="Cholo Victor Mendivil Video Oficial">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/QzDxqLhH-OU" title="Cholo - Víctor Mendívil (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Cholo — Víctor Mendívil</div>
+            <div class="subtitle">Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="Rafagas al Viento Victor Mendivil Video Oficial">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/0n1G60O6YfY" title="Ráfagas al Viento - Víctor Mendívil (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Ráfagas al Viento — Víctor Mendívil</div>
+            <div class="subtitle">Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="RZR Aleman Victor Mendivil Video Oficial">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/Z7K3d-OAfK4" title="Víctor Mendívil x Alemán – RZR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">RZR — Víctor Mendívil x Alemán</div>
+            <div class="subtitle">Colaboración • Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="Jacobo Grinberg Victor Mendivil Video Oficial">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/T_oKg5WkBg8" title="Víctor Mendívil – Jacobo Grinberg (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Jacobo Grinberg — Víctor Mendívil</div>
+            <div class="subtitle">Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="Dos + Dos Omar Camacho Victor Mendivil Video Oficial 2+2">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/wG6wAyUUDOE" title="Omar Camacho x Víctor Mendívil – Dos + Dos (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Dos + Dos (2+2) — Omar Camacho x Víctor Mendívil</div>
+            <div class="subtitle">Colaboración • Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="Tutankamon Album Visualizer Victor Mendivil">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/OrVZFtQ1JS0" title="Víctor Mendívil – Tutankamón (Visualizer Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">Tutankamón — Víctor Mendívil</div>
+            <div class="subtitle">Visualizer oficial del álbum</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="YOU Tiagz Victor Mendivil Official Video">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/fy5N_ghHf4o" title="Tiagz & Víctor Mendívil – YOU (Official Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">YOU — Tiagz & Víctor Mendívil</div>
+            <div class="subtitle">Colaboración • Video oficial</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-title="UN SCAR Luis R Conriquez Victor Mendivil">
+        <div class="thumb">
+          <iframe src="https://www.youtube.com/embed/RN1fONt4uKM" title="UN SCAR – Víctor Mendívil ft. Luis R. Conriquez (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <div class="dot" aria-hidden></div>
+          <div>
+            <div class="title-sm">UN SCAR — Víctor Mendívil ft. Luis R. Conriquez</div>
+            <div class="subtitle">Colaboración • Video oficial</div>
+          </div>
+        </div>
+      </article>
+<article class="card" data-title="King of Watches Victor Mendivil Netón Vega Video Oficial">
+  <div class="thumb">
+    <iframe src="https://www.youtube.com/embed/a4B94c7goH8" title="King Of Watches – Víctor Mendívil x Netón Vega (Video Oficial)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="content">
+    <div class="dot" aria-hidden></div>
+    <div>
+      <div class="title-sm">King of Watches — Víctor Mendívil x Netón Vega</div>
+      <div class="subtitle">Colaboración • Audio oficial</div>
+    </div>
+  </div>
+      </article>
+
+    </div>
+    </div>
+  </div>
+
+  <script>
+    const q = document.getElementById('q');
+    const grid = document.getElementById('grid');
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    const empty = document.getElementById('empty');
+
+    const filter = () => {
+      const term = q.value.trim().toLowerCase();
+      let visible = 0;
+      cards.forEach(c => {
+        const t = c.getAttribute('data-title').toLowerCase();
+        const show = !term || t.includes(term);
+        c.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      empty.style.display = visible ? 'none' : 'block';
+    };
+
+    q.addEventListener('input', filter);
+    window.addEventListener('keydown', (e)=>{
+      if(e.key === '/' && document.activeElement !== q){ e.preventDefault(); q.focus(); }
+      if(e.key === 'Escape'){ q.value=''; filter(); }
+    });
+  </script>
+</body>
+</html>
