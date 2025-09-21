@@ -1,0 +1,34 @@
+:root {
+    --color1: #06a2db;    
+    --color2: #0d4394;    
+    --color3: #064d91;    
+    --color4: #1d0348;    
+    --color5: #18056d;  
+
+}
+
+* {
+    background-color: var(--color1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 40px;
+
+}
+.item { 
+    background-color: var(--color5);
+    border-color: #19194f;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 
+    
+}
