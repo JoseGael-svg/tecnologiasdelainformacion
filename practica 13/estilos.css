@@ -1,0 +1,18 @@
+body {
+background-color: gray;
+color: black;
+padding: 0px;
+margin: 0px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+#encabezado {
+background-color: rgb(255, 0, 0);
+border: 2px solid black;
+width: 80%;
+display: block;
+margin: 0px auto;
+box-shadow:  200px 200px 400px 33px rgba(0,0,0,1);
+-webkit-caja-sombra: 200px 200px 400px 33px rgba(0,0,0,1);
+-moz-caja-sombra: 200px 200px 400px 33px rgba(0,0,0,1);
+}

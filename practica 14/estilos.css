@@ -1,0 +1,64 @@
+body {
+    background-color: #181c24;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #232a36;
+    border: 2px solid #222831;
+    border-radius: 10px;
+    justify-content: center;
+}
+.cuadro {
+    background-color: #232a36;
+    border: 2px solid #222831;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 5px 5px 15px rgba(24,28,36,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+    /* Multicolor iridescent effect using a gradient background */
+    background: linear-gradient(135deg, #43cea2, #38f9d7, #667eea, #764ba2, #b721ff, #43cea2, #38f9d7, #667eea, #764ba2, #b721ff, #43cea2);
+    background-size: 800% 800%;
+    animation: tornasol 5s ease-in-out infinite;
+    border-radius: 35px;
+}
+
+@keyframes tornasol {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.cuadro:hover {
+    background: linear-gradient(135deg, #43cea2, #38f9d7, #667eea, #b721ff, #43cea2, #764ba2, #43cea2, #38f9d7, #667eea);
+    background-size: 800% 800%;
+    animation: tornasol 2s ease-in-out infinite;
+    transform: scale(1.1);
+    box-shadow: 8px 8px 20px rgba(24,28,36,0.4);
+}
+.morado {
+    background: linear-gradient(135deg, #764ba2, #b721ff, #667eea, #43cea2, #764ba2);
+    background-size: 600% 600%;
+    animation: tornasol 6s linear infinite;
+}
+.rosa {
+    background: linear-gradient(135deg, #43cea2, #38f9d7, #667eea, #b721ff, #43cea2);
+    background-size: 600% 600%;
+    animation: tornasol 6s linear infinite;
+}
