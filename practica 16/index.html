@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de Películas</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0b0e1a;
+      color: #fff;
+      margin: 0;
+      padding: 24px;
+    }
+    h1 { text-align: center; margin-bottom: 32px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161b2e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+    }
+    .info {
+      padding: 14px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .year { color: #9ca3af; font-size: 0.9rem; }
+    .desc { color: #d1d5db; font-size: 0.9rem; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Peliculas</h1>
+  <div class="grid">
+
+    <div class="card">
+      <img src="peliculas/1 (2).jpeg" alt="">
+      <div class="info">
+        <div class="title">Inception</div>
+        <div class="year">2010 · Christopher Nolan</div>
+        <div class="desc">Un ladrón que roba secretos mediante sueños recibe la tarea de implantar una idea en la mente de alguien.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/2 (2).jpeg" alt=""> 
+      <div class="info">
+        <div class="title">The Godfather</div>
+        <div class="year">1972 · Francis Ford Coppola</div>
+        <div class="desc">La historia épica de la familia Corleone en el mundo del crimen organizado.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/3 (2).jpeg" alt=""> 
+      <div class="info">
+        <div class="title">Pulp Fiction</div>
+        <div class="year">1994 · Quentin Tarantino</div>
+        <div class="desc">Historias entrelazadas de crimen, humor negro y redención en Los Ángeles.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/4 (2).jpeg" alt=""> 
+      <div class="info">
+        <div class="title">Spirited Away</div>
+        <div class="year">2001 · Hayao Miyazaki</div>
+        <div class="desc">Una niña entra a un mundo mágico gobernado por espíritus y debe rescatar a sus padres.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/5 (2).jpeg" alt=""> 
+      <div class="info">
+        <div class="title">The Shawshank Redemption</div>
+        <div class="year">1994 · Frank Darabont</div>
+        <div class="desc">La amistad entre dos presos y la esperanza en medio de la adversidad.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/6 (2).jpeg" alt=""> 
+      <div class="info">
+        <div class="title">Interstellar</div>
+        <div class="year">2014 · Christopher Nolan</div>
+        <div class="desc">Exploradores viajan por un agujero de gusano buscando un nuevo hogar para la humanidad.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/7.jpeg" alt=""> 
+      <div class="info">
+        <div class="title">Parasite</div>
+        <div class="year">2019 · Bong Joon-ho</div>
+        <div class="desc">Una familia pobre se infiltra en la vida de una familia rica con consecuencias inesperadas.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/8.jpeg" alt=""> 
+      <div class="info">
+        <div class="title">The Matrix</div>
+        <div class="year">1999 · The Wachowskis</div>
+        <div class="desc">Un hacker descubre que la realidad es una simulación controlada por máquinas.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/9.jpeg" alt="">
+      <div class="info">
+        <div class="title">La La Land</div>
+        <div class="year">2016 · Damien Chazelle</div>
+        <div class="desc">Una historia de amor entre un pianista de jazz y una aspirante a actriz en Los Ángeles.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peliculas/10.jpeg" alt=""> 
+      <div class="info">
+        <div class="title">The Avengers</div>
+        <div class="year">2012 · Joss Whedon</div>
+        <div class="desc">Los superhéroes más poderosos del planeta se unen para enfrentar una amenaza global.</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
